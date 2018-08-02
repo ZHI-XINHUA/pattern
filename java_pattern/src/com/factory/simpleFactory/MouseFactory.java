@@ -5,7 +5,7 @@ package com.factory.simpleFactory;
  */
 public class MouseFactory {
 
-    public Mouse createMouse(String type){
+    public static Mouse createMouse(String type){
         if("dell".equals(type)){
             return new DellMouse();
         }else if("hp".equals(type)){

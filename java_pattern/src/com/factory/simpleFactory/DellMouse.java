@@ -1,5 +1,4 @@
 package com.factory.simpleFactory;
-
 /**
  * 戴尔鼠标类（产品角色）
  */
