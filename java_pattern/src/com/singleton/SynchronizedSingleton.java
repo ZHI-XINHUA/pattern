@@ -1,4 +1,4 @@
-package com.factory.singleton;
+package com.singleton;
 
 /**
  * 利用同步实例化对象，解决并发情况下单例的对象创建

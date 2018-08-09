@@ -1,4 +1,4 @@
-package com.factory.singleton;
+package com.singleton;
 
 /**
  * 单例模式，此种方式实现不支持多线程环境。并发环境会创建多个实例。
