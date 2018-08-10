@@ -13,7 +13,7 @@ public class SynchronizedSingleton {
     //私有化构造函数,防止外部实例化
     private SynchronizedSingleton(){}
 
-    //实例化对象
+    //同步实例化对象
     public synchronized static SynchronizedSingleton getInstace(){
         if(singleton==null){
             singleton = new SynchronizedSingleton();
