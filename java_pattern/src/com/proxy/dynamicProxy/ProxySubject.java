@@ -11,7 +11,6 @@ public class ProxySubject implements InvocationHandler {
     //目标对象（被代理对象）
     private Object targetObj;
 
-
     /**
      * 创建动态代理类的实例
      * @param targetObj
@@ -28,6 +27,14 @@ public class ProxySubject implements InvocationHandler {
     }
 
 
+    /**
+     *在代理实例上处理方法调用并返回结果
+     * @param proxy  代理类
+     * @param method 被代理的方法
+     * @param args 该方法的参数数组
+     * @return
+     * @throws Throwable
+     */
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         //调用前增强
