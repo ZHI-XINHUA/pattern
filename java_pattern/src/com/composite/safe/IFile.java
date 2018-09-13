@@ -16,6 +16,4 @@ public interface IFile {
     //删除文件
     void delete();
 
-
-
 }
