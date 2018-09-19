@@ -1,11 +1,11 @@
 package com.zxh.observer;
 
 public class PoliceObserver implements Observer {
-	private String informantLocation;//ÏßÈËµÄÎ»ÖÃ
+	private String informantLocation;//çº¿äººçš„ä½ç½®
 
 	@Override
 	public void update(Subject subject) {
-		//»ñÈ¡ÏßÈËÎ»ÖÃ
+		//è·å–çº¿äººä½ç½®
 		informantLocation = ((InformantSubject)subject).getLocation();
 
 	}
@@ -17,7 +17,7 @@ public class PoliceObserver implements Observer {
 	public void setInformantLocation(String informantLocation) {
 		this.informantLocation = informantLocation;
 	}
-	
-	
+
+
 
 }

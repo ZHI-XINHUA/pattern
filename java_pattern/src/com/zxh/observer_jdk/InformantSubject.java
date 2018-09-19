@@ -3,7 +3,7 @@ package com.zxh.observer_jdk;
 import java.util.Observable;
 
 public class InformantSubject extends Observable {
-	private String location;//Î»ÖÃ
+	private String location;//ä½ç½®
 
 	public String getLocation() {
 		return location;
@@ -11,7 +11,7 @@ public class InformantSubject extends Observable {
 
 	public void setLocation(String location) {
 		this.location = location;
-		setChanged();  //±íÊ¾Ä¿±ê¶ÔÏóÒÑ¾­×öÁË¸ü¸Ä
-		this.notifyObservers("ÎÒÏÖÔÚµÄÎ»ÖÃ");;//±»¹Û²ì¶ÔÏóÎ»ÖÃ·¢ËÍ¸Ä±ä£¬ÂíÉÏÍ¨Öª¹Û²ìÕß
+		setChanged();  //è¡¨ç¤ºç›®æ ‡å¯¹è±¡å·²ç»åšäº†æ›´æ”¹
+		this.notifyObservers("æˆ‘ç°åœ¨çš„ä½ç½®");;//è¢«è§‚å¯Ÿå¯¹è±¡ä½ç½®å‘é€æ”¹å˜ï¼Œé©¬ä¸Šé€šçŸ¥è§‚å¯Ÿè€…
 	}
 }

@@ -1,10 +1,10 @@
 package com.zxh.observer;
 
 /**
-* ±»¹Û²ì¶ÔÏó
+ * è¢«è§‚å¯Ÿå¯¹è±¡
  */
 public class InformantSubject extends Subject {
-	private String location;//Î»ÖÃ
+	private String location;//ä½ç½®
 
 	public String getLocation() {
 		return location;
@@ -12,8 +12,8 @@ public class InformantSubject extends Subject {
 
 	public void setLocation(String location) {
 		this.location = location;
-		this.notifyAllObservers();//±»¹Û²ì¶ÔÏóÎ»ÖÃ·¢ËÍ¸Ä±ä£¬ÂíÉÏÍ¨Öª¹Û²ìÕß
+		this.notifyAllObservers();//è¢«è§‚å¯Ÿå¯¹è±¡ä½ç½®å‘é€æ”¹å˜ï¼Œé©¬ä¸Šé€šçŸ¥è§‚å¯Ÿè€…
 	}
-	
-	
+
+
 }
