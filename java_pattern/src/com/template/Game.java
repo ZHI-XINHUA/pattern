@@ -23,7 +23,7 @@ public abstract class Game {
     /**
      * 模板方法实现
      */
-    public void play(){
+    public final void play(){
         initialize();
         start();
         end();
