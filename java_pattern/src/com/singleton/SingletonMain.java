@@ -10,5 +10,13 @@ public class SingletonMain {
             System.out.println( instance.toString());
         }
 
+
+        //测试枚举实现单例模式
+        System.out.println("========");
+        EnumSingleton enumSingleton1 = EnumSingleton.SINGLETON;
+        EnumSingleton enumSingleton2 = EnumSingleton.SINGLETON;
+        enumSingleton1.operate();
+        System.out.println(enumSingleton1== enumSingleton2);
+
     }
 }
