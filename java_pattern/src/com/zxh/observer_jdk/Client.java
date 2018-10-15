@@ -3,31 +3,31 @@ package com.zxh.observer_jdk;
 public class Client {
 
 	public static void main(String[] args) {
-		//Ä¿±ê¶ÔÏó £¨ÏßÈË£©
+		//ç›®æ ‡å¯¹è±¡ ï¼ˆçº¿äººï¼‰
 		InformantSubject subject = new InformantSubject();
-		
-		//´´½¨¶à¸ö¹Û²ìÕß
+
+		//åˆ›å»ºå¤šä¸ªè§‚å¯Ÿè€…
 		PoliceObserver p1 = new PoliceObserver();
 		PoliceObserver p2 = new PoliceObserver();
 		PoliceObserver p3 = new PoliceObserver();
-		
-		//Ìí¼Óµ½¹Û²ì×é
+
+		//æ·»åŠ åˆ°è§‚å¯Ÿç»„
 		subject.addObserver(p1);
 		subject.addObserver(p2);
 		subject.addObserver(p3);
-		
-		//ÏßÈË»î¶¯ÁË
+
+		//çº¿äººæ´»åŠ¨äº†
 		System.out.println("########## #############");
-		subject.setLocation("²§À¼½Ö");
-		System.out.println("team one »ñµÃÏßÈËĞÅÏ¢£º"+p1.getInformantLocation());
-		System.out.println("team two  »ñµÃÏßÈËĞÅÏ¢£º"+p2.getInformantLocation());
-		System.out.println("team three »ñµÃÏßÈËĞÅÏ¢£º"+p3.getInformantLocation());
+		subject.setLocation("é’µå…°è¡—");
+		System.out.println("team one è·å¾—çº¿äººä¿¡æ¯ï¼š"+p1.getInformantLocation());
+		System.out.println("team two  è·å¾—çº¿äººä¿¡æ¯ï¼š"+p2.getInformantLocation());
+		System.out.println("team three è·å¾—çº¿äººä¿¡æ¯ï¼š"+p3.getInformantLocation());
 		System.out.println("########## #############");
-		
-		subject.setLocation("¼âÉ³¾×");
-		System.out.println("team one »ñµÃÏßÈËĞÅÏ¢£º"+p1.getInformantLocation());
-		System.out.println("team two  »ñµÃÏßÈËĞÅÏ¢£º"+p2.getInformantLocation());
-		System.out.println("team three »ñµÃÏßÈËĞÅÏ¢£º"+p3.getInformantLocation());
+
+		subject.setLocation("å°–æ²™å’€");
+		System.out.println("team one è·å¾—çº¿äººä¿¡æ¯ï¼š"+p1.getInformantLocation());
+		System.out.println("team two  è·å¾—çº¿äººä¿¡æ¯ï¼š"+p2.getInformantLocation());
+		System.out.println("team three è·å¾—çº¿äººä¿¡æ¯ï¼š"+p3.getInformantLocation());
 		System.out.println("########## #############");
 	}
 

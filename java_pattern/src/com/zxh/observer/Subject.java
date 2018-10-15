@@ -4,23 +4,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
-* ¹Û²ìÕß¹Û²ìµÄÄ¿±ê£¨¼´ÊÇ±»¹Û²ì¶ÔÏóµÄ¸¸Àà£©
+* è§‚å¯Ÿè€…è§‚å¯Ÿçš„ç›®æ ‡ï¼ˆå³æ˜¯è¢«è§‚å¯Ÿå¯¹è±¡çš„çˆ¶ç±»ï¼‰
 */
 public class Subject {
-	//´æ·ÅËùÓĞ¹Û²ìÕß
+	//å­˜æ”¾æ‰€æœ‰è§‚å¯Ÿè€…
 	protected List<Observer> list = new ArrayList<Observer>();
-	
-	//Ìí¼Ó¹Û²ìÕß
+
+	//æ·»åŠ è§‚å¯Ÿè€…
 	public void addObserver(Observer observer){
 		list.add(observer);
 	}
-	
-	//ÒÆ³ı¹Û²ìÕß
+
+	//ç§»é™¤è§‚å¯Ÿè€…
 	public void removeObserver(Observer observer){
 		list.remove(observer);
 	}
-	
-	//Í¨ÖªËùÓĞ¹Û²ìÕß
+
+	//é€šçŸ¥æ‰€æœ‰è§‚å¯Ÿè€…
 	public void notifyAllObservers(){
 		for(Observer observer:list){
 			observer.update(this);

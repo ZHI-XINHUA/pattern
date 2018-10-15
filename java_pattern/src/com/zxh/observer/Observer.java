@@ -1,9 +1,9 @@
 package com.zxh.observer;
 
 /**
-* ¹Û²ìÕß½Ó¿Ú
+ * è§‚å¯Ÿè€…æ¥å£
  */
 public interface Observer {
-	//»ñÈ¡¹Û²ìÄ¿±ê£¨±»¹Û²ì¶ÔÏó£©·¢ËÍ±ä»¯µÄĞÅÏ¢
+	//è·å–è§‚å¯Ÿç›®æ ‡ï¼ˆè¢«è§‚å¯Ÿå¯¹è±¡ï¼‰å‘é€å˜åŒ–çš„ä¿¡æ¯
 	void update(Subject subject);
 }

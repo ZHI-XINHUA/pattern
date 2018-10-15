@@ -5,12 +5,12 @@ import java.util.Observer;
 
 public class PoliceObserver implements Observer {
 
-	private String informantLocation;//线人的位置
-	
+	private String informantLocation;//脧脽脠脣碌脛脦禄脰脙
+
 	@Override
 	public void update(Observable observable, Object message) {
 		String location = ((InformantSubject)observable).getLocation();
-		informantLocation = message+"【"+location+"】";
+		informantLocation = message+"隆戮"+location+"隆驴";
 
 	}
 
@@ -22,5 +22,5 @@ public class PoliceObserver implements Observer {
 		this.informantLocation = informantLocation;
 	}
 
-	
+
 }
