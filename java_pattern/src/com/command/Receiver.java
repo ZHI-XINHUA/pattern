@@ -1,12 +1,10 @@
 package com.command;
 
 /**
- * Created by xh.zhi on 2018-10-15.
+ * 真正的命令的执行者
+ * 接受者角色：负责具体实施和执行一个请求
  */
 public class Receiver {
-    public Receiver(){
-
-    }
 
     public void action(){
         System.out.println(" Receiver>action");
