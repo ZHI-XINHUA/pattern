@@ -12,6 +12,9 @@ public class RoomContext {
         this.state = state;
     }
 
+    /**
+     * 行为操作
+     */
     public void useSituation(){
         state.operation();
     }
