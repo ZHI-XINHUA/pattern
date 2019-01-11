@@ -1,5 +1,7 @@
 # java设计模式
 
+[Wiki](https://github.com/ZHI-XINHUA/pattern/wiki)
+
 ## 创建型模式
 
 - [单例模式](https://github.com/ZHI-XINHUA/pattern/tree/master/java_pattern/src/com/singleton)
